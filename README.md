@@ -1,2 +1,9 @@
-# pyTasaDesempleoAA
-Proyecto de fin de curso, Aprendisaje Automatico
+# IDENTIFICACIÓN DE VARIABLES INFLUYENTES EN LA TASA DE DESEMPLEO EN EL PERÚ CON APRENDIZAJE AUTOMÁTICO (2007–2025)
+
+El presente estudio analiza la influencia de variables macroeconómicas sobre la tasa de desempleo en el Perú durante el periodo 2007–2025 mediante la aplicación de técnicas de aprendizaje automático. El objetivo principal fue cuantificar la magnitud, signo y rezagos de la relación entre la tasa de referencia del Banco Central de Reserva del Perú, la inflación, el tipo de cambio, el producto bruto interno (PBI) interanual y las expectativas macroeconómicas respecto al desempleo, así como predecir su evolución futura. Para ello, se implementaron dos modelos de predicción: una red neuronal densa y un modelo XGBoost, ambos entrenados con series mensuales obtenidas del BCRP e INEI, incorporando rezagos de hasta doce meses y normalización temporal.
+
+Los resultados muestran que la tasa de referencia es la variable más influyente, confirmando su papel central en la dinámica del desempleo. La red neuronal obtuvo un error absoluto medio (MAE) de 0.818, evidenciando una alta capacidad de ajuste y una mejor predicción de tendencias mensuales. El modelo XGBoost, con MAE de 1.5432 y R² de –5.1592, permitió identificar la importancia relativa de cada predictor, destacando la influencia de la política monetaria y las expectativas, aunque con menor precisión general.
+
+La comparación de ambos enfoques sugiere que las redes neuronales son más adecuadas para pronósticos cuantitativos, mientras que los modelos de árboles ofrecen mayor interpretabilidad causal. En conjunto, la combinación de ambos métodos constituye una estrategia híbrida que equilibra precisión y explicabilidad, útil para la formulación de políticas económicas basadas en evidencia. Finalmente, se identifican oportunidades de mejora mediante la incorporación de variables estructurales y la aplicación de modelos de series temporales avanzados, como LSTM o Transformers, con potencial para fortalecer la comprensión del comportamiento del empleo en el país.
+
+**Palabras clave**: desempleo, aprendizaje automático, red neuronal, XGBoost, política monetaria, Perú.
